@@ -8,7 +8,7 @@ let newWord; // 현재 단어
 
 const onClickButton = () => {
   // 제시어가 비어 있는가?
-  if (!word || word[word.length - 1] === newWord[0]) {
+  if (newWord.length === 3 && (!word || word[word.length - 1] === newWord[0])) {
     // 비어 있다
     word = newWord;
     $word.textContent = word;
